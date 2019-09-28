@@ -15,7 +15,7 @@ namespace SpaceInvader.Enemy
         // Start is called before the first frame update
         void Start()
         {
-            m_EnemyGenerator.InstantiateEnemy(170);
+            m_EnemyGenerator.EnemySetup();
         }
 
         // Update is called once per frame

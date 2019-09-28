@@ -23,13 +23,6 @@ namespace SpaceInvader.Helper
         public float yPosition;
     }
 
-    public class EnemyData
-    {
-        public Cells EnemyCellData;
-        public EnemyType EnemyType;
-        public int killPoint;
-    }
-
     public class GameDataContainer
     {
         public static List<Cells> CellsList = new List<Cells>();

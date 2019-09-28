@@ -1,0 +1,22 @@
+{
+	"prefabPath": "Enemy/",
+	"enemy": [{
+			"type": 1,
+			"cellId": [72, 73, 74, 75, 76],
+			"killPoint": 10,
+			"prefabName": "EnemyRed"
+		},
+		{
+			"type": 2,
+			"cellId": [62, 63, 64, 65, 66],
+			"killPoint": 20,
+			"prefabName": "EnemyGreen"
+		},
+		{
+			"type": 3,
+			"cellId": [52, 53, 54, 55, 56],
+			"killPoint": 30,
+			"prefabName": "EnemyBlue"
+		}
+	]
+}

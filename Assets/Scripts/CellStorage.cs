@@ -4,7 +4,7 @@ using UnityEngine;
 using SpaceInvader.Helper;
 using System.Linq;
 
-public class SpriteGenerator : MonoBehaviour
+public class CellStorage : MonoBehaviour
 {
     [SerializeField]
     private GameObject m_Enemy1;
@@ -25,15 +25,6 @@ public class SpriteGenerator : MonoBehaviour
         StoreCellsData();
     }
 
-    private Vector2 CalculatePosition(int row, int column)
-    {
-        Vector2 l_Position = new Vector2();
-        l_Position.x = ((Constants.TILE_PER_SIZE * column) - (Constants.TILE_PER_SIZE / 2f)) / Constants.PIXELS_PER_UNIT;
-        l_Position.y = ((Constants.TILE_PER_SIZE * row) - (Constants.TILE_PER_SIZE / 2f)) / Constants.PIXELS_PER_UNIT;
-
-        return l_Position;
-    }
-
     private void StoreCellsData()
     {
         Vector2 l_CellPosition = Vector2.zero;
@@ -52,17 +43,14 @@ public class SpriteGenerator : MonoBehaviour
                 GameDataContainer.CellsList.Add(l_CellData);
             }
         }
-
     }
 
-    public void InstantiateCharacter(int cellId, Transform parent)
+    private Vector2 CalculatePosition(int row, int column)
     {
-        GameObject l_Player = Instantiate(m_Enemy1);
-        Cells l_CellData = m_ListOfCells.Single(x => x.id == cellId);
+        Vector2 l_Position = new Vector2();
+        l_Position.x = ((Constants.TILE_PER_SIZE * column) - (Constants.TILE_PER_SIZE / 2f)) / Constants.PIXELS_PER_UNIT;
+        l_Position.y = ((Constants.TILE_PER_SIZE * row) - (Constants.TILE_PER_SIZE / 2f)) / Constants.PIXELS_PER_UNIT;
 
-        Debug.LogError("id :: " + l_CellData.id);
-
-        l_Player.transform.localPosition = new Vector2(l_CellData.xPosition, l_CellData.yPosition);
-        l_Player.transform.SetParent(parent, false);
+        return l_Position;
     }
 }

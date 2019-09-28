@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 8382978900119364690}
   - component: {fileID: 8382978900119364689}
-  - component: {fileID: 9190320783140937850}
+  - component: {fileID: -6620501950423593476}
   m_Layer: 0
-  m_Name: EnemyRed
+  m_Name: EnemyGreen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -70,18 +70,18 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 5
-  m_Sprite: {fileID: 21300000, guid: e18a24156bd35074ea46d147b1342524, type: 3}
+  m_Sprite: {fileID: 21300000, guid: caba85a612cb210439e1ed5a5d40b7da, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1.08, y: 1.08}
+  m_Size: {x: 1.024, y: 1.024}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &9190320783140937850
+--- !u!114 &-6620501950423593476
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
